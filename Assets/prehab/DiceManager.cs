@@ -102,7 +102,7 @@ public class DiceManager : MonoBehaviour
         diceValues[1] = dice2.GetValue();
         diceValues[2] = dice3.GetValue();
 
-        chinchiro.EvaluateDice(diceValues);
+        chinchiro.EvaluateDice(diceValues); // ChinchiroManagerと連携して役を判別
     }
 
     private IEnumerator ResetThrowOrDeleteCooldown()
